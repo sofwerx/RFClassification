@@ -26,4 +26,4 @@ for row, col in zip(nonzero_row, nonzero_col):
 
 snr = list(i[0] for i in dit)
 ky=tuple(zip(mods,snr))
-mod_data = {key: np.array(dat[i] for i in range(0, len(ky)) ) for key in ky}
+mod_data = {key: np.array(dat[i]) for i in range(0, len(ky))  for key in ky}
